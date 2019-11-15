@@ -8,7 +8,7 @@ const Bar = ({percent, name}) => {
     return (
 <div className ="bars" 
 style ={{height: `${percent}%`}} >
-<h5>{name}{percent}</h5>
+<h5>{name}</h5>
 
 </div>
     );

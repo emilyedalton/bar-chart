@@ -5,22 +5,17 @@ import Bar from './Bar'
 import './index.css'
 
 
-const lines = [130,120,110,100, 90, 80, 70, 60, 50, 40, 30, 20, 10]
+const lines = [ 90, 80, 70, 60, 50, 40, 30, 20, 10]
 const ticks = [90, 80, 70, 60, 50, 40, 30, 20, 10]
 class Graph extends Component{
  
 
-// state = {
-
-//     }
-    // renderBars() {
-    // const { currencies } = this.currencies;
         
 horozontalLines(){
 return lines.map((el, i)=>(
 <Line 
-top ={el}
-key={i}
+  top ={(el)/128 * 100}
+  key={i}
 />
 ))
     }
@@ -62,7 +57,7 @@ return (
             <Bar 
               percent={(value)/128 * 100}
               key={currency.currencyName}
-              // name={currency.currencyName}
+              name={currency.marketCap}
             />
           )
         })

@@ -45,7 +45,6 @@ code {
 
 .bar-text-content {
   height: 600px;
-
   background: yellow;
   display: flex;
   flex-direction: column-reverse;

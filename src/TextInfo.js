@@ -8,7 +8,7 @@ const TextInfo = () => {
         <div className="bar-text-content">
           {
             markerArr.map((el, i) => (
-             <p className="ticks" style={{ top: `${i * 10}%` }}>
+             <p style={{ top: `${i * 10}%` }}>
               { i * 10 }
              </p>
             ))
