@@ -14,7 +14,7 @@ code {
 .graph {
   position: relative;
   max-width: 800px;
-  height: 400px;
+  height: 600px;
   background: gray;
   display: flex;
   align-items: flex-end;
@@ -32,7 +32,7 @@ code {
 .bar-lines-container {
   position: relative;
   width: 88%;
-  height: 400px;
+  height: 600px;
   background: orange;
   /* display: block; */
   display: flex; 
@@ -44,9 +44,12 @@ code {
 }
 
 .bar-text-content {
-  height: 100%;
-  width: 12%;
-  background: yellow
+  height: 600px;
+
+  background: yellow;
+  display: flex;
+  flex-direction: column-reverse;
+
 }
 
 .bars{

@@ -27,7 +27,7 @@ const data = {
   },
   {
     currencyName: 'Stellar',
-    marketCap: 105
+    marketCap: 128
   }
 ]}
 function App() {

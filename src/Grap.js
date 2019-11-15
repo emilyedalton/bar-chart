@@ -5,7 +5,8 @@ import Bar from './Bar'
 import './index.css'
 
 
-const lines = [90, 80, 70, 60, 50, 40, 30, 20, 10]
+const lines = [130,120,110,100, 90, 80, 70, 60, 50, 40, 30, 20, 10]
+const ticks = [90, 80, 70, 60, 50, 40, 30, 20, 10]
 class Graph extends Component{
  
 
@@ -23,12 +24,23 @@ key={i}
 />
 ))
     }
+
+// sidebarTicks(){
+//   return ticks.map((el, i)=>(
+//     <TextInfo 
+//     top ={el}
+//     key={i}
+//     />
+//   ))
+// }
+
 render (){
 return (
 <div className ="graph-wrapper">
 
 <div className= "graph">
-<TextInfo/>
+<TextInfo currencies={this.props.currencies} />
+
 <div className ="bar-lines-container">
  {this.horozontalLines()}  
  {/* <Line top = {90}/>
@@ -50,7 +62,7 @@ return (
             <Bar 
               percent={(value)/128 * 100}
               key={currency.currencyName}
-              name={currency.currencyName}
+              // name={currency.currencyName}
             />
           )
         })
